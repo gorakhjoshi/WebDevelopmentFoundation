@@ -172,3 +172,88 @@ h1 {
 ```
 
 In the example above, the `<h1>` element is aligned to the right side, instead of the default left.
+
+## 6.Web Fonts
+
+Previously, we learned about web safe fonts, a group of fonts supported across browsers and operating systems. However, the fonts you can use for your website are limitless—web fonts allow you to express your unique style through a multitude of different fonts found on the web.
+
+![Web Font](images/web-font.png)
+
+Free font services, like [Google Fonts](https://fonts.google.com/) and [Adobe Fonts](https://fonts.adobe.com/), host fonts that you can link to from your HTML document with a provided `<link>` element.
+
+You can also use fonts from paid font distributors like [fonts.com](https://www.fonts.com/) by downloading and hosting them with the rest of your site’s files. You can create a `@font-face` ruleset in your CSS stylesheet to link to the relative path of the font file.
+
+Both techniques for including web fonts into your site allow you to go beyond the sometimes “traditional” appearance of web safe fonts. In the next two exercises, you’ll learn exactly how to use each of these techniques!
+
+## 7.Web Fonts Using `<link>`
+
+Online font services, like [Google Fonts](https://fonts.google.com/), make it easy to find and link to fonts from your site. You can browse and select fonts that match the style of your website.
+
+![google](images/google%20font.png)
+
+When you select a font in Google Fonts, you’ll be shown all of the different styles available for that particular font. You can then select the styles you want to use on your site.
+
+![google font](images/google%20font.webp)
+
+When you’re done selecting a font and its styles, you can review your selected font family, and a `<link>` element will be automatically generated for you to use on your site!
+
+```css
+<head>
+  <!-- Add the link element for Google Fonts along with other metadata -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+</head>
+```
+
+The generated `<link>` element needs to be added to the `<head>` element in your HTML document for it to be ready to be used in your CSS.
+
+```css
+p {
+  font-family: "Roboto", sans-serif;
+}
+```
+
+You can then create `font-family` declarations in your CSS, just like how you learned to do with other fonts!
+
+## 8.Web Fonts Using @font-face
+
+Fonts can also be added using a `@font-face` [ruleset](https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face) in your CSS stylesheet instead of using a `<link>` element in your HTML document. As mentioned earlier, fonts can be downloaded just like any other file on the web. They come in a few different file formats, such as:
+
+- OTF (OpenType Font)
+- TTF (TrueType Font)
+- WOFF (Web Open Font Format)
+- WOFF2 (Web Open Font Format 2)
+
+The different formats are a progression of standards for how fonts will work with different browsers, with WOFF2 being the most progressive. It’s a good idea to include TTF, WOFF, and WOFF2 formats with your `@font-face` rule to ensure compatibility on all browsers.
+
+Let’s take a look at how to use `@font-face` using the same Roboto font as before:
+
+![Roboto](images/roboto.webp)
+
+Within the “Selected Families” section, you can use the “Download” button to download the font files to your computer. The files will be downloaded as a single format, in this case, TTF. You can use a tool such as [Google Web Fonts Helper](https://google-webfonts-helper.herokuapp.com/fonts) to generate additional file types for WOFF and WOFF2.
+
+When you have the files you need, move them to a folder inside your website’s working directory, and you’re ready to use them in a `@font-face` ruleset!
+
+```css
+@font-face {
+  font-family: "MyParagraphFont";
+  src: url("fonts/Roboto.woff2") format("woff2"), url("fonts/Roboto.woff")
+      format("woff"), url("fonts/Roboto.ttf") format("truetype");
+}
+```
+
+Let’s take a look at the example above, line by line:
+
+- The `@font-face` at-rule is used as the selector. It’s recommended to define the `@font-face` ruleset at the top of your CSS stylesheet.
+- Inside the declaration block, the `font-family` property is used to set a custom name for the downloaded font. The name can be anything you choose, but it must be surrounded by quotation marks. In the example, the font is named `'MyParagraphFont'`, as this font will be used for all paragraphs.
+- The `src` property contains three values, each specifying the relative path to the font file and its format. In this example, the font files are stored inside a folder named `fonts` within the working directory.
+- Note that the ordering for the different formats is important because our browser will start from the top of the list and search until it finds a font format that it supports. Read more on format prioritization on [CSS-Tricks](https://css-tricks.com/snippets/css/using-font-face-in-css/).
+
+Once the `@font-face` at-rule is defined, you can use the font in your stylesheet!
+
+```css
+p {
+  font-family: "MyParagraphFont", sans-serif;
+}
+```
+
+Like using any other fonts, you can use the `font-family` property to set the font on any HTML element. The downloaded font can be referenced with the name you provided as the `font-family` property’s value in the `@font-face` ruleset—in this case, `'MyParagraphFont'`.
