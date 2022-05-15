@@ -8,10 +8,9 @@ The box model comprises the set of properties that define parts of an element th
 - `margin`: The amount of space between the border and the outside edge of the element.
 
 ![Box-Model](images/box-model.png)
-
 Fig: Box Model
 
-## **1.Height and Width**
+## **1. Height and Width**
 
 An element’s content has two dimensions: a height and a width. By default, the dimensions of an HTML box are set to hold the raw contents of the box.
 
@@ -28,7 +27,7 @@ In this example, the `height` and `width` of paragraph elements are set to 80 pi
 
 Pixels allow you to set the exact size of an element’s box (width and height). When the width and height of an element are set in pixels, it will be the same size on all devices — an element that fills a laptop screen will overflow a mobile screen.
 
-## **2.Borders**
+## **2. Borders**
 
 A border is a line that surrounds an element, like a frame around a painting. Borders can be set with a specific `width`, `style`, and `color`:
 
@@ -84,7 +83,7 @@ div.container {
 
 The code in the example above creates a `<div>` that is a perfect circle.
 
-## **3.Padding**
+## **3. Padding**
 
 The space between the contents of a box and the borders of a box is known as padding. `Padding` is like the space between a picture and the frame surrounding it. In CSS, you can modify this space with the `padding` property.
 
@@ -117,7 +116,7 @@ p.content-header {
 
 In the example above, only the bottom side of the paragraph’s content will have a `padding` of 10 pixels.
 
-### #.Padding Shorthand
+### #. Padding Shorthand
 
 Another implementation of the `padding` property lets you specify exactly how much padding there should be on each side of the content in a single declaration. A declaration that uses multiple properties as values is known as a shorthand property.
 
@@ -193,7 +192,7 @@ p {
 
 In the example above, only the right side of the paragraph’s box will have a margin of 15 pixels. It’s common to see margin values used for a specific side of an element.
 
-### #A.Margin Shorthand
+### A. Margin Shorthand
 
 What if you don’t want equal margins on all four sides of the box and don’t have time to separate properties for each side? You’re in luck! Margin can be written as a shorthand property as well. The shorthand syntax for margins is the same as padding, so if you’re feeling comfortable with that, skip to the instructions. Otherwise, read on to learn how to use margin shorthand!
 
@@ -236,7 +235,7 @@ p {
 
 And finally, if the top and bottom sides can be equal, and the left and right sides can be equal, you can specify 2 values. The first value sets the margin-top and margin-bottom values (`20px`), and the second value sets the margin-left and margin-right values (`10px`).
 
-### #B. Auto
+### B. Auto
 
 The `margin` property also lets you center content. However, you must follow a few syntax requirements. Take a look at the following example:
 
@@ -253,7 +252,7 @@ In order to center an element, a width must be set for that element. Otherwise, 
 
 In the example above, the width of the `div` is set to `400` pixels, which is less than the width of most screens. This will cause the div to center within a containing element that is greater than 400 pixels wide.
 
-### #C.Margin Collapse
+### C. Margin Collapse
 
 As you have seen, padding is space added inside an element’s border, while margin is space added outside an element’s border. One additional difference is that top and bottom margins, also called vertical margins, collapse, while top and bottom padding does not.
 
@@ -291,7 +290,7 @@ It may be helpful to think of collapsing vertical margins as a short person tryi
 
 #### [**Rules of Margin Collapse**](https://www.joshwcomeau.com/css/rules-of-margin-collapse/)
 
-## 5.Minimum and Maximum Height and Width
+## 5. Minimum and Maximum Height and Width
 
 Because a web page can be viewed through displays of differing screen size, the content on the web page can suffer from those changes in size. To avoid this problem, CSS offers two properties that can limit how narrow or how wide an element’s box can be sized to:
 
@@ -325,7 +324,7 @@ In the example above, the height of all paragraphs will not shrink below 150 pix
 
 What will happen to the contents of an element’s box if the `max-height` property is set too low? It’s possible for the content to spill outside of the box, resulting in content that is not legible. You’ll learn how to work around this issue in the next exercise.
 
-## 6.Overflow
+## 6. Overflow
 
 All of the components of the box model comprise an element’s size. For example, an image that has the following dimensions is 364 pixels wide and 244 pixels tall.
 
@@ -358,7 +357,7 @@ In the example above, if any of the paragraph content overflows (perhaps a user 
 
 The `overflow` property is set on a parent element to instruct a web browser on how to render child elements. For example, if a div’s overflow property is set to scroll, all children of this div will display overflowing content with a scroll bar.
 
-## 7.Resetting Defaults
+## 7. Resetting Defaults
 
 All major web browsers have a default stylesheet they use in the absence of an external stylesheet. These default stylesheets are known as user agent stylesheets. In this case, the term user agent is a technical term for the browser.
 
@@ -377,7 +376,7 @@ The code in the example above resets the default margin and padding values of al
 
 Note that both properties are both set to `0`. When these properties are set to `0`, they do not require a unit of measurement.
 
-## 8.Visibility
+## 8. Visibility
 
 Elements can be hidden from view with the `visibility` property.
 
@@ -405,4 +404,5 @@ In the example above, the list item with a class of `future` will be hidden from
 
 Keep in mind, however, that users can still view the contents of the list item (e.g., `Donate`) by viewing the source code in their browser. Furthermore, the web page will only hide the contents of the element. It will still leave an empty space where the element is intended to display.
 
-Note📝: What’s the difference between `display: none` and `visibility: hidden`? An element with `display: none` will be completely removed from the web page. An element with `visibility: hidden`, however, will not be visible on the web page, but the space reserved for it will.
+| 📝  | `display: none` VS `visibility: hidden`=> _An element with `display: none` will be completely removed from the web page. An element with `visibility: hidden`, however, will not be visible on the web page, but the space reserved for it will._ |
+| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |

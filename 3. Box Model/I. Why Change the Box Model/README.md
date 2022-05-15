@@ -1,4 +1,4 @@
-## 1.Why Change the Box Model?
+## 1. Why Change the Box Model?
 
 The last lesson focused on the most important aspects of the box model: box dimensions, borders, padding, and margin.
 
@@ -37,7 +37,7 @@ The same can be said about the box model that browsers assume. In CSS, the `box-
 
 The default value of this property is `content-box`. This is the same box model that is affected by border thickness and padding.
 
-## 3.Box Model: Border-Box
+## 3. Box Model: Border-Box
 
 ![Border Box](images/../../images/border-box.png)
 
@@ -72,9 +72,9 @@ h1 {
 
 In the example above, the height of the box would remain at 200 pixels and the width would remain at 300 pixels. The border thickness and padding would remain entirely inside of the box.
 
-## 4.The New Box Model
+## 4. The New Box Model
 
-Now that you know about the new box model, let’s actually implement it in the browser.
+Now that you know about the new box model, let’s actually implement it.
 
 ```css
 * {
