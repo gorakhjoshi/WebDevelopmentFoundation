@@ -1,10 +1,10 @@
-## 1.Type
+## 1. Type
 
 Remember that declarations are a fundamental part of CSS because they apply a style to a selected element. But how do you decide which elements will get the style? With a selector.
 
 A selector is used to target the specific HTML element(s) to be styled by the declaration. One selector you may already be familiar with is the type selector. Just like its name suggests, the type selector matches the type of the element in the HTML document.
 
-In the previous lesson, you changed the color of a paragraph element.
+Let's change color of the paragraph.
 
 ```css
 p {
@@ -19,11 +19,11 @@ Some important notes on the type selector:
 - The type selector does not include the angle brackets.
 - Since element types are often referred to by their opening tag name, the type selector is sometimes referred to as the tag name or element selector.
 
-## 2.Universal
+## 2. Universal
 
 You learned how the type selector selects all elements of a given type. Well, the universal selector selects all elements of any type.
 
-Targeting all of the elements on the page has a few specific use cases, such as resetting default browser styling, or selecting all children of a parent element. Don’t worry if you don’t understand the use cases right now—we will get to them later on in our Learn CSS journey.
+Targeting all of the elements on the page has a few specific use cases, such as resetting default browser styling, or selecting all children of a parent element. Don’t worry if you don’t understand the use cases right now—we will get to them later on in our journey.
 
 The universal selector uses the \* character in the same place where you specified the type selector in a ruleset, like so:
 
@@ -35,7 +35,7 @@ The universal selector uses the \* character in the same place where you specifi
 
 In the code above, every text element on the page will have its font changed to `Verdana`.
 
-## 3.Class
+## 3. Class
 
 CSS is not limited to selecting elements by their type. As you know, HTML elements can also have `attributes`. When working with HTML and CSS a class attribute is one of the most common ways to select an element.
 
@@ -54,7 +54,7 @@ The paragraph element in the example above has a `class` attribute within the op
 
 To select an HTML element by its class using CSS, a period `(.)` must be prepended to the class’s name. In the example above, the class is `brand`, so the CSS selector for it is `.brand`.
 
-## 4.Multiple Classes
+## 4. Multiple Classes
 
 We can use CSS to select an HTML element’s `class` attribute by name. And so far, we’ve selected elements using only one class name per element. If every HTML element had a single class, all the style information for each element would require a new class.
 
@@ -234,7 +234,7 @@ Selecting elements in this way can make our selectors even more specific by maki
 
 ## 12. Chaining and Specificity
 
-In the last exercise, instead of selecting all `<h5>` elements, you selected only the `<h5>` elements nested inside the `.description` elements. This CSS selector was more specific than writing only `h5`. Adding more than one tag, class, or ID to a CSS selector increases the specificity of the CSS selector.
+While selecting HTMl elements instead od selecting all `<h5>` elements, we can select only the `<h5>` elements nested inside the `.description` elements. This CSS selector will be more specific than writing only `h5`. Adding more than one tag, class, or ID to a CSS selector increases the specificity of the CSS selector.
 
 For instance, consider the following CSS:
 
