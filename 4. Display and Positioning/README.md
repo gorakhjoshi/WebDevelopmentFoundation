@@ -18,7 +18,7 @@ The default position of an element can be changed by setting its `position` prop
 - `fixed`
 - `sticky`
 
-### A.Position: Relative
+### A. Position: Relative
 
 One way to modify the default position of an element is by setting its `position` property to `relative`.
 
@@ -55,7 +55,7 @@ In the example above, the element of `green-box` class will be moved down 50 pix
 
 Offsetting the relative element will not affect the positioning of other elements.
 
-### B.Position: Absolute
+### B. Position: Absolute
 
 Another way of modifying the position of an element is by setting its position to `absolute`.
 
@@ -65,7 +65,7 @@ When an element’s position is set to `absolute`, all other elements on the pag
 
 The “Website building in progress. Please come back later!” text is displaced from its static position at the top left corner of its parent container. It has offset property declarations of `top: 300px;` and `right: 0px;`, positioning it 300 pixels down, and 0 pixels from the right side of the page.
 
-## C.Position: Fixed
+## C. Position: Fixed
 
 When an element’s position is set to `absolute`, as in the last exercise, the element will scroll with the rest of the document when a user scrolls.
 
@@ -83,7 +83,7 @@ In the example above, the `.title` element will remain `fixed` to its position n
 
 This technique is often used for navigation bars on a web page.
 
-### D.Position: Sticky
+### D. Position: Sticky
 
 Since `static` and `relative` positioned elements stay in the normal flow of the document, when a user scrolls the page (or parent element) these elements will scroll too. And since `fixed` and `absolute` positioned elements are removed from the document flow, when a user scrolls, these elements will stay at their specified offset position.
 
