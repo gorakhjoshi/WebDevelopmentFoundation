@@ -33,7 +33,7 @@ h1 {
 
 In the example above, the text of the heading will appear in red, and the background of the heading will appear blue.
 
-## 1.Hexadecimal
+## 1. Hexadecimal
 
 One syntax that we can use to specify colors is called `hexadecimal`. Colors specified using this system are called `hex` colors. A `hex` color begins with a hash character (`#`) which is followed by three or six characters. The characters represent values for `red`, `blue` and `green`.
 
@@ -53,7 +53,7 @@ Notice that `black`, `white`, and `aqua` are all represented with both three cha
 
 You can include hex colors just as you would include named colors: `background-color: #9932cc;`, and the letters can be uppercase or lowercase.
 
-## 2.RGB Colors
+## 2. RGB Colors
 
 There is another syntax for representing RGB values, commonly referred to as “RGB value” or just “RGB”, that uses decimal numbers rather than hexadecimal numbers, and it looks like this:
 
@@ -67,13 +67,13 @@ Each of the three values represents a color component, and each can have a decim
 
 In general, hex and RGB color representations are equivalent. Which you choose is a matter of personal taste. That said, it’s good to choose one and be consistent throughout your CSS, because it’s easier to compare hex to hex and RGB to RGB.
 
-## 3.Hex and RGB
+## 3. Hex and RGB
 
 The hexadecimal and rgb color system can represent many more colors than the small set of CSS named colors. We can use this new set of colors to refine our web page’s style.
 
 In both hex and RGB, we have three values, one for each color. Each can be one of 256 values. Specifically, `256 * 256 * 256 = 16,777,216`. That is the amount of colors we can now represent. Compare that to the roughly 140 named CSS colors!
 
-## 4.Hue, Saturation, and Lightness
+## 4. Hue, Saturation, and Lightness
 
 The RGB color scheme is convenient because it’s very close to how computers represent colors internally. There’s another equally powerful system in CSS called the hue-saturation-lightness color scheme, abbreviated as HSL.
 
