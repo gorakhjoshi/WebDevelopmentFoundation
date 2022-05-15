@@ -6,7 +6,7 @@ In this lesson, we’ll focus on typography, the art of arranging text on a page
 - How to lay text out on a page.
 - and how to add external fonts to your web pages.
 
-## 1.Font Family
+## 1. Font Family
 
 You may remember from the Visual Rules lesson that the font of an element can be changed using the font-family property.
 
@@ -61,7 +61,7 @@ h1 {
 
 In this final example, the font stack has 4 fonts. If the first 3 fonts aren’t available, the browser will use whatever serif font is available on the system.
 
-## 2.Font Weight
+## 2. Font Weight
 
 In CSS, the `font-weight` property controls how bold or thin text appears. It can be specified with keywords or numerical values.
 
@@ -92,7 +92,7 @@ In the example above, text in elements of both `.left-section` and `.right-secti
 
 It’s important to note that not all fonts can be assigned a numeric font weight, and not all numeric font weights are available to all fonts. It’s a good practice to look up the font you are using to see which `font-weight` values are available.
 
-## 3.Font Style
+## 3. Font Style
 
 You can also italicize text with the font-style property.
 
@@ -104,7 +104,7 @@ h3 {
 
 The `italic` value causes text to appear in italics. The `font-style` property also has a `normal` value which is the default.
 
-## 4.Text Transformation
+## 4. Text Transformation
 
 Text can also be styled to appear in either all uppercase or lowercase with the `text-transform` property.
 
@@ -120,7 +120,7 @@ Since text can be directly typed in all uppercase or lowercase within an HTML fi
 
 Depending on the type of content a web page displays, it may make sense to always style a specific element in all uppercase or lowercase letters. For example, a website that reports breaking news may decide to format all `<h1>` heading elements such that they always appear in all uppercase, as in the example above. It would also avoid uppercase text in the HTML file, which could make code difficult to read.
 
-## 5.Text Layout
+## 5. Text Layout
 
 You’ve learned how text can be defined by font family, weight, style, and transformations. Now you’ll learn about some ways text can be displayed or laid out within the element’s container.
 
@@ -173,7 +173,7 @@ h1 {
 
 In the example above, the `<h1>` element is aligned to the right side, instead of the default left.
 
-## 6.Web Fonts
+## 6. Web Fonts
 
 Previously, we learned about web safe fonts, a group of fonts supported across browsers and operating systems. However, the fonts you can use for your website are limitless—web fonts allow you to express your unique style through a multitude of different fonts found on the web.
 
@@ -185,7 +185,7 @@ You can also use fonts from paid font distributors like [fonts.com](https://www.
 
 Both techniques for including web fonts into your site allow you to go beyond the sometimes “traditional” appearance of web safe fonts. In the next two exercises, you’ll learn exactly how to use each of these techniques!
 
-## 7.Web Fonts Using `<link>`
+## 7. Web Fonts Using `<link>`
 
 Online font services, like [Google Fonts](https://fonts.google.com/), make it easy to find and link to fonts from your site. You can browse and select fonts that match the style of your website.
 
@@ -214,7 +214,7 @@ p {
 
 You can then create `font-family` declarations in your CSS, just like how you learned to do with other fonts!
 
-## 8.Web Fonts Using @font-face
+## 8. Web Fonts Using @font-face
 
 Fonts can also be added using a `@font-face` [ruleset](https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face) in your CSS stylesheet instead of using a `<link>` element in your HTML document. As mentioned earlier, fonts can be downloaded just like any other file on the web. They come in a few different file formats, such as:
 

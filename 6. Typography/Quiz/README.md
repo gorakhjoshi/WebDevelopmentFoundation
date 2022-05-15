@@ -1,6 +1,6 @@
-# Quiz.....
+# Typography Quiz
 
-### Q1.How would the following CSS rule set affect paragraph (`<p>`) elements?
+### Q1. How would the following CSS rule set affect paragraph (`<p>`) elements?
 
 ```css
 p {
@@ -13,14 +13,14 @@ p {
 - [ ] C. Space will appear between lines of text in the `<p>` element because the container for each line is 1.5 times its default height.
 - [ ] D. It adds a 1.5-pixel margin around the `<p>` element.
 
-### Q2.What’s the difference between serif and sans-serif fonts?
+### Q2. What’s the difference between serif and sans-serif fonts?
 
 - [ ] A. Serif fonts are larger in size (by default) than sans-serif fonts.
 - [ ] B. Most browsers support only sans-serif fonts, by default.
 - [ ] C. Sans-serif fonts include details on the ends of letters, whereas serif fonts do not.
 - [ ] D. Serif fonts include details on the ends of letters, whereas sans-serif fonts do not.
 
-### Q3.Which rule will make all `<h1>` text uppercase?
+### Q3. Which rule will make all `<h1>` text uppercase?
 
 - [ ] A.
 
@@ -54,14 +54,14 @@ h1 {
 }
 ```
 
-### Q4.Why is it important to include web-safe, fallback fonts?
+### Q4. Why is it important to include web-safe, fallback fonts?
 
 - [ ] A. Using web-safe fonts will overwrite any custom fonts.
 - [ ] B. It’s not important to include web-safe, fallback fonts.
 - [ ] C. In the case that your custom fonts don’t render, web-safe fonts provide a secondary option.
 - [ ] D. Three fonts must be provided to `font-family`.
 
-### Q5.The following HTML code links to what Google Font?
+### Q5. The following HTML code links to what Google Font?
 
 ```html
 <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" />
@@ -72,7 +72,7 @@ h1 {
 - [ ] C. Family-Roboto
 - [ ] D. Ringo
 
-### Q6.How does this CSS rule set affect <h1> elements?
+### Q6. How does this CSS rule set affect <h1> elements?
 
 ```css
 h1 {
@@ -85,7 +85,7 @@ h1 {
 - [ ] C. None, `letter-spacing` is an invalid CSS property.
 - [ ] D. `<h1>` elements will have 20 pixels of space between every letter.
 
-### Q7.Why might a user see the Times font with this CSS rule?
+### Q7. Why might a user see the Times font with this CSS rule?
 
 ```css
 h1 {
@@ -98,7 +98,7 @@ h1 {
 - [ ] C. The Garamond font is not available on the user’s computer, but Times is.
 - [ ] D. All website text is displayed in Times.
 
-### Q8.What does the following line of HTML code do?
+### Q8. What does the following line of HTML code do?
 
 ```html
 <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" />
@@ -109,7 +109,7 @@ h1 {
 - [ ] C. Links a font file and allows you to use the `Lato` font for `font-family` in CSS style rules.
 - [ ] D. Set the font to `Lato` for `<link>` elements.
 
-### Q9.The following CSS code fails to set the typeface of the heading to Courier New. Why?
+### Q9. The following CSS code fails to set the typeface of the heading to Courier New. Why?
 
 ```css
 h1 {
