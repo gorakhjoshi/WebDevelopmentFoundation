@@ -1,8 +1,0 @@
-plugins:
-  - jekyll-relative-links
-relative_links:
-  enabled: true
-  collections: true
-include:
-  - README.md
-  - /WebDevelopmentFoundation/1.%20Modern%20Semantic%20HTML%20Markup%20/README.md
