@@ -5,4 +5,4 @@ relative_links:
   collections: true
 include:
   - README.md
-  - https://gorakhjoshi.github.io/WebDevelopmentFoundation/1.%20Modern%20Semantic%20HTML%20Markup%20/README.md
+  - 1.%20Modern%20Semantic%20HTML%20Markup%20/README.md
