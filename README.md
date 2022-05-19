@@ -1,4 +1,4 @@
-# Week I
+# Week I: Web Development Fundamentals & Version Control with Git
 
 1. [Modern Semantic HTML Markup](1.%20Modern%20Semantic%20HTML%20Markup%20/README.md)
 2. [Selectors](2.%20Selectors/README.md)
