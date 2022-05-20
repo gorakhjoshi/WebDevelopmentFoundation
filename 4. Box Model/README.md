@@ -7,7 +7,7 @@ The box model comprises the set of properties that define parts of an element th
 - `border`: The thickness and style of the border surrounding the content area and padding.
 - `margin`: The amount of space between the border and the outside edge of the element.
 
-![Box Model](images/box-model.png)
+![Box Model](images/border-box.png)
 
 Fig: Box Model
 
