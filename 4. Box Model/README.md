@@ -7,7 +7,7 @@ The box model comprises the set of properties that define parts of an element th
 - `border`: The thickness and style of the border surrounding the content area and padding.
 - `margin`: The amount of space between the border and the outside edge of the element.
 
-![Box Model](images/box-model.PNG)
+![Box Model](images/box-model.png)
 
 Fig: Box Model
 
@@ -259,7 +259,7 @@ As you have seen, padding is space added inside an element’s border, while mar
 
 Horizontal margins (left and right), like padding, are always displayed and added together. For example, if two divs with ids **`#div-one`** and **`#div-two`**, are next to each other, they will be as far apart as the sum of their adjacent margins.
 
-![Margin collapse](images/margin-collapse.PNG)
+![Margin collapse](images/margin-collapse.png)
 
 Fig: Margin collapse.
 
